@@ -1,0 +1,31 @@
+# !/usr/bin/python
+# -*- coding: utf-8 -*-
+# @Time     : 2018/8/17  23:54
+# @Author   : D.Henry
+# @Email    : 1009444100@qq.com
+# @File     : 1.1.3.py.py
+# @Software : PyCharm
+
+# ----------------------------------------------
+# 1.1.3 题目描述：
+# 编写一个程序，从命令行得到三个整数参数。
+# 如果它们都相等则打印equal,否则打印not equa.
+# ----------------------------------------------
+
+import sys
+
+
+def compare(a, b, c):
+    if a == b and b == c:
+        print("equal")
+    else:
+        print("not equal")
+
+
+if __name__ == '__main__':
+    if len(sys.argv) > 3:
+        print(sys.argv[0] + '运行的结果：', end='')
+        compare(int(sys.argv[1]), int(sys.argv[2]), int(sys.argv[3]))
+    else:
+        print("参数错误：请输入3个整数参数")
+        print("example: python 1.1.3.py  2 3 3")
