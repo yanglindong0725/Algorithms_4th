@@ -10,12 +10,18 @@
 # 1.1.3 题目描述：
 # 编写一个程序，从命令行得到三个整数参数。
 # 如果它们都相等则打印equal,否则打印not equa.
+#
+# Python 中用sys的sys.argv来获取命令行参数
+# sys.argv是命令行参数列表
+# len(sys.argv)是命令行参数个数
+# sys.argv[0]表示脚本名
 # ----------------------------------------------
 
 import sys
 
 
 def compare(a, b, c):
+	"""比较a, b, c三个整数参数是否相等"""
     if a == b and b == c:
         print("equal")
     else:
