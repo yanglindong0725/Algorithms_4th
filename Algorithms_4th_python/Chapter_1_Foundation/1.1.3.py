@@ -21,7 +21,6 @@ import sys
 
 
 def compare(a, b, c):
-	"""比较a, b, c三个整数参数是否相等"""
     if a == b and b == c:
         print("equal")
     else:
