@@ -18,10 +18,20 @@ import sys
 
 def n_to_binary_string(n):
 	"""将一个正整数用二进制表示，并转换为String类型"""
-	binary_str = ''
+	# 方法一：
+	# binary_str = ''
+	# while n > 0:
+	# 	binary_str = str(n % 2) + binary_str
+	# 	n = n // 2
+	# return binary_str
+
+	# 方法二：
+	binary_lists = []
 	while n > 0:
-		binary_str = str(n % 2) + binary_str
+		binary = str(n % 2)
+		binary_lists.append(binary)
 		n = n // 2
+	binary_str = "".join(binary_lists)
 	return binary_str
 
 
