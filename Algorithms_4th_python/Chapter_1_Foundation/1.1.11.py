@@ -18,6 +18,7 @@ import random
 
 
 def random_n_dimensional_array(n):
+	"""初始化随机二维布尔数组"""
 	n_dimensional_array = [[1] * n for i in range(n)]
 	for i in range(n):
 		for j in range(n):
@@ -25,14 +26,32 @@ def random_n_dimensional_array(n):
 	return n_dimensional_array
 
 
+def print_bool_matrix(matrix, s):
+	"""打印布尔类型的二维矩阵,matrix是bool矩阵，s是含有两个字符的字符串"""
+	double_blank = '  '
+	triple_blank = '   '
+	row_fmt = '{0:0>2d}  {1}'
+	len_row = len(matrix)
+	head_lists = []
+	for i in range(len_row):
+		head_lists.append('{:0>2d}'.format(i + 1))
+	print('{0}  {1}'.format(double_blank, double_blank.join(head_lists)))
+	for i in range(len_row):
+		row = i + 1
+		row_lists = []
+		for j in range(len_row):
+			r = s[a[i][j]]
+			row_lists.append(str(r))
+		print(row_fmt.format(row, triple_blank.join(row_lists)))
+
+
 if __name__ == '__main__':
 	if len(sys.argv) > 1:
 		a = random_n_dimensional_array(int(sys.argv[1]))
 	else:
 		a = random_n_dimensional_array(10)
-
-	print("  " + ' '.join('%2d' % (n + 1) for n in range(len(a))))
-	s = '* '
-	for i in range(len(a)):
-		print(str(i + 1) + "  " + "  ".join(
-			str(s[a[i][j]]) for j in range(len(a))))
+	# 打印*号和空格表示的矩阵
+	print_bool_matrix(a, '-*')
+	print('-' * 100)
+	# 打印0、1表示的矩阵
+	print_bool_matrix(a, '01')
