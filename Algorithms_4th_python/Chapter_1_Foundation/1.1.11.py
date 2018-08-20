@@ -32,10 +32,12 @@ def print_bool_matrix(matrix, s):
 	triple_blank = '   '
 	row_fmt = '{0:0>2d}  {1}'
 	len_row = len(matrix)
+	# 初始化列序列
 	head_lists = []
 	for i in range(len_row):
 		head_lists.append('{:0>2d}'.format(i + 1))
 	print('{0}  {1}'.format(double_blank, double_blank.join(head_lists)))
+	# 打印布尔数组
 	for i in range(len_row):
 		row = i + 1
 		row_lists = []
@@ -46,6 +48,7 @@ def print_bool_matrix(matrix, s):
 
 
 if __name__ == '__main__':
+	"""默认打印10*10的矩阵，可选命令行传参"""
 	if len(sys.argv) > 1:
 		a = random_n_dimensional_array(int(sys.argv[1]))
 	else:
