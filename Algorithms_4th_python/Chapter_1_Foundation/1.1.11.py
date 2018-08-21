@@ -42,7 +42,7 @@ def print_bool_matrix(matrix, s):
 		row = i + 1
 		row_lists = []
 		for j in range(len_row):
-			r = s[a[i][j]]
+			r = s[matrix[i][j]]
 			row_lists.append(str(r))
 		print(row_fmt.format(row, triple_blank.join(row_lists)))
 
