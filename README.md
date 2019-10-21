@@ -1,4 +1,4 @@
-# 算法第四版（Algorithms_4th）Python实现
+# 算法第四版（Algorithms_4th)
 
 ![算法图片](README.assets/algorithms.png)
 
