@@ -1,3 +1,5 @@
+package Code;
+
 import edu.princeton.cs.algs4.StdDraw;
 
 public class draw {
