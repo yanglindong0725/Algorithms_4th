@@ -8,7 +8,7 @@
 
 [项目地址](https://github.com/DongHenry/Algorithms_4th_Python) 
 
-### :basketball: 目录结构描述
+### 目录结构描述
 
 ----------------
 
@@ -33,7 +33,7 @@ Algorithms_4th_python
 |       |-- Chapter_6_Context
 ```
 
-### :basketball: 原书配套网站
+### 原书配套网站
 
 -------------------
 
