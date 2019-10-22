@@ -14,23 +14,13 @@
 
 
 ```python
-Algorithms_4th_python
+Algorithms_4th/
+|-- .idea/
+|-- Code/
+|-- README.assets/
+|-- .gitignore
+|-- Algorithms_4th.iml
 |-- README.md
-|-- Algorithms_4th_python
-|   |-- Algorithms_4th
-|       |-- Chapter_1_Foundation
-|       |-- Chapter_2_Sort
-|       |-- Chapter_3_Search
-|       |-- Chapter_4_Graph
-|       |-- Chapter_5_String
-|       |-- Chapter_6_Context
-|   |-- Algorithms_4thTest
-|       |-- Chapter_1_Foundation
-|       |-- Chapter_2_Sort
-|       |-- Chapter_3_Search
-|       |-- Chapter_4_Graph
-|       |-- Chapter_5_String
-|       |-- Chapter_6_Context
 ```
 
 ### 原书配套网站
