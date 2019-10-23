@@ -34,4 +34,4 @@ Algorithms_4th/
 - 全书所有的Java代码
 - 部分练习题答案
 - 可视化的算法演示
-- 提供测试数据集`algs4.data`的下载
+- 提供测试数据集[`algs4.data`](https://algs4.cs.princeton.edu/code/)的下载
