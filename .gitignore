@@ -102,3 +102,4 @@ fabric.properties
 hs_err_pid*
 
 algs4-data/
+.idea/markdown-doclet.xml
