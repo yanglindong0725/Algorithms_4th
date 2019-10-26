@@ -4,6 +4,9 @@ import edu.princeton.cs.algs4.In;
 import edu.princeton.cs.algs4.StdIn;
 import edu.princeton.cs.algs4.StdOut;
 
+import java.util.Scanner;
+
+
 public class ex1_1 {
     public static void main(String[] args) {
         /*
@@ -37,16 +40,15 @@ public class ex1_1 {
          * 如果它们都相等则打印 equal, 否则打印 not equal。
          */
         StdOut.println("请输入三个整数：");
-        int a = StdIn.readInt();
-        StdOut.println("Your int was: " + a);
+        int a = new In().readInt();
+        int b = new In().readInt();
+        int c = new In().readInt();
+        if ( a == b  && b == c )
+            StdOut.println("equal");
+        else
+            StdOut.println("not equal");
         StdOut.println();
-//        int a = StdIn.readInt();
-//        StdOut.println(a + ' ');
-//        int b = StdIn.readInt();
-//        int c = StdIn.readInt();
-//        if ( a == b  && b == c )
-//            StdOut.println("equal");
-//        else
-//            StdOut.println("not equal");
+
+
     }
 }
