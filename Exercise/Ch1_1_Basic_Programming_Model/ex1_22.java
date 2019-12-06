@@ -29,7 +29,7 @@ public class ex1_22 {
             return rank(key, a, lo, mid - 1, depth + 1);
         } else if (key > a[mid]) {
             return rank(key, a, mid + 1, hi, depth + 1);
-        } else {
+        } else { 
             return mid;
         }
     }
